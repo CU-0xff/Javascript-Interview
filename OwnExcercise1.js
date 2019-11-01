@@ -9,3 +9,6 @@ var Vehicle = function (license="", vendor="", age=0, cost=30000) {
     }
 
 }
+
+
+//Problem: Functions in objects are costly

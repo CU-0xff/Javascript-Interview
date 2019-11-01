@@ -9,3 +9,5 @@ var animals = [
 animals.sort(stringCompare);
 console.log(animals);
 // ["ant", "bee", "cat", "dog", "elephant"]
+
+//Problem: Sorting does not reflect equal case (return 0)

@@ -6,6 +6,6 @@ var animals = [
     'cat', 'dog', 'elephant', 'bee', 'ant'
 ];
 
-animals.sort();
+animals.sort(stringCompare);
 console.log(animals);
 // ["ant", "bee", "cat", "dog", "elephant"]

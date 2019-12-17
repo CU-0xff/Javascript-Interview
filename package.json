@@ -1,0 +1,29 @@
+{
+  "name": "javascript-interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CWE.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CU-0xff/Javascript-Interview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CU-0xff/Javascript-Interview/issues"
+  },
+  "homepage": "https://github.com/CU-0xff/Javascript-Interview#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-flow": "^7.0.0",
+    "eslint": "^6.6.0",
+    "flow-bin": "^0.111.0"
+  },
+  "scripts": {
+    "flow": "flow"
+  }
+}

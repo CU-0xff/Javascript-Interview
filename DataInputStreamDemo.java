@@ -4,11 +4,18 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import java.util.regex.*;
+
+// Test test
 public class DataInputStreamDemo {
    public static void main(String[] args) throws IOException {
       InputStream is = null;
       DataInputStream dis = null;
       
+      String pattern = "This is no pattern";
+
+      Pattern r = Pattern.compile("This is no pattern");
+
       try {
          // create file input stream
          is = new FileInputStream("test.txt");
@@ -35,7 +42,11 @@ public class DataInputStreamDemo {
             // prints character
             System.out.print(c);
          }
-         
+      
+         Matcher m = r.matcher(buf.toString());
+
+         if(m.find()) System.out.println("Found!");
+
       } catch(Exception e) {
          // if any error occurs
          e.printStackTrace();

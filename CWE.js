@@ -7,7 +7,7 @@ function CWE_129(x) { // ARRAY_INDEX_NEGATIVE
     }
 }
 
-function CWE_398() { // IDENTICAL_BRANCHES
+function CWE_398() { // IDENTICAL_BRANCHES [DeepCode FINDS]
     if (x >= 0) {
         y = x;
     } else {
@@ -28,16 +28,16 @@ function CWE_480() { // BAD_BITWISE_OPERATOR
     }
 }
 
-function CWE_480_481() { // BAD_ASSIGN_IN_CONDITION
+function CWE_480_481() { // BAD_ASSIGN_IN_CONDITION [DeepCode FINDS]
     var x = -1;
     if (x = -1) console.log('Error!', x);
 }
 
-function CWE_482_665() { // UNUSED_EXPR
+function CWE_482_665() { // UNUSED_EXPR [ESLint FINDS]
     this.foo + 42;
 }
 
-function CWE_484() { // SWITCH_CASE_FALL_THROUGH
+function CWE_484() { // SWITCH_CASE_FALL_THROUGH [ESLint FINDS]
     var x;
     switch (x) {
     case '1': console.log('Do one thing');
@@ -53,7 +53,7 @@ function CWE_489_569_570_571() { // CONSTANT_CONDITION
     }
 }
 
-function CWE_561() { // UNREACHABLE_CODE
+function CWE_561() { // UNREACHABLE_CODE [ESLint FINDS]
     return;
 
     var bar = 1;
@@ -74,14 +74,15 @@ function CWE_628() { // TOO_MANY_ARGS
     console.log(sum);
 }
 
-function CWE_670(x) { // STRAY_SEMICOLON
+function CWE_670(x) { // STRAY_SEMICOLON 
+    let sum = 0;
     while (++x <= 10) ;
     {
         sum += x;
     }
 }
 
-function CWE_685() { // MISMATCHED_COUNT_OF_ARGS
+function CWE_685(a,b) { // MISMATCHED_COUNT_OF_ARGS
     return Math.atan2(a/b);
 }
 
